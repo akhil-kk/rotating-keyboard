@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rotating Keyboard</title>
+</head>
+
+<body>
+    <div class="keyboard">
+        <div class="text-screen">
+            <textarea id="textarea" cols="85" rows="8" placeholder=" Single click anywhere on the screen to start. &#10 Single click to select any row. &#10 Single click to select any key. &#10 Use navigation keys to move up and down." style="font-size: 20px;"></textarea>
+            <!-- <i style="font-size: 2em; font-weight: bolder;">|</i> -->
+        </div>
+        <div class="keys" id="keys">
+            <div class="row1" id="r1">
+                <div id="a1" class="unselected down"><i class="fa fa-arrow-down"></i></div>
+                <div id="a2" class="unselected character"><a href="">a</a></div>
+                <div id="a3" class="unselected character"><a href="">b</a></div>
+                <div id="a4" class="unselected character"><a href="">c</a></div>
+                <div id="a5" class="unselected character"><a href="">d</a></div>
+                <div id="a6" class="unselected character"><a href="">e</a></div>
+                <div id="a7" class="unselected character"><a href="">f</a></div>
+                <div id="a8" class="unselected character"><a href="">g</a></div>
+                <div id="a9" class="unselected character"><a href="">.</a></div>
+                <div id="a10" class="unselected space"><span class="iconify" data-icon="cil:space-bar"></span></div>
+                <div id="a11" class="unselected backspace"><span class="iconify" data-icon="fa-solid:backspace"></span></div>
+                <div id="a12" class="unselected enter"><span class="iconify" data-icon="uil:enter"></span></div>
+                <div id="a13" class="unselected up"><i class="fa fa-arrow-up"></i></div>
+            </div>
+
+            <div class="row2" id="r2">
+                <div id="b1" class="unselected down"><i class="fa fa-arrow-down"></i></div>
+                <div id="b2" class="unselected character"><a href="">h</a></div>
+                <div id="b3" class="unselected character"><a href="">i</a></div>
+                <div id="b4" class="unselected character"><a href="">j</a></div>
+                <div id="b5" class="unselected character"><a href="">k</a></div>
+                <div id="b6" class="unselected character"><a href="">l</a></div>
+                <div id="b7" class="unselected character"><a href="">m</a></div>
+                <div id="b8" class="unselected character"><a href="">n</a></div>
+                <div id="b9" class="unselected character"><a href="">.</a></div>
+                <div id="b10" class="unselected space"><span class="iconify" data-icon="cil:space-bar"></span></div>
+                <div id="b11" class="unselected backspace"><span class="iconify" data-icon="fa-solid:backspace"></span></div>
+                <div id="b12" class="unselected enter"><span class="iconify" data-icon="uil:enter"></span></div>
+                <div id="b13" class="unselected up"><i class="fa fa-arrow-up"></i></div>
+            </div>
+
+            <div class="row3" id="r3">
+                <div id="c1" class="unselected down"><i class="fa fa-arrow-down"></i></div>
+                <div id="c2" class="unselected character"><a href="">o</a></div>
+                <div id="c3" class="unselected character"><a href="">p</a></div>
+                <div id="c4" class="unselected character"><a href="">q</a></div>
+                <div id="c5" class="unselected character"><a href="">r</a></div>
+                <div id="c6" class="unselected character"><a href="">s</a></div>
+                <div id="c7" class="unselected character"><a href="">t</a></div>
+                <div id="c8" class="unselected character"><a href="">u</a></div>
+                <div id="c9" class="unselected character"><a href="">.</a></div>
+                <div id="c10" class="unselected space"><span class="iconify" data-icon="cil:space-bar"></span></div>
+                <div id="c11" class="unselected backspace"><span class="iconify" data-icon="fa-solid:backspace"></span></div>
+                <div id="c12" class="unselected enter"><span class="iconify" data-icon="uil:enter"></span></div>
+                <div id="c13" class="unselected up"><i class="fa fa-arrow-up"></i></div>
+            </div>
+
+            <div class="row4" id="r4">
+                <div id="d1" class="unselected down"><i class="fa fa-arrow-down"></i></div>
+                <div id="d2" class="unselected character"><a href="">v</a></div>
+                <div id="d3" class="unselected character"><a href="">w</a></div>
+                <div id="d4" class="unselected character"><a href="">x</a></div>
+                <div id="d5" class="unselected character"><a href="">y</a></div>
+                <div id="d6" class="unselected character"><a href="">z</a></div>
+                <div id="d7" class="unselected character"><a href="">#</a></div>
+                <div id="d8" class="unselected character"><a href="">*</a></div>
+                <div id="d9" class="unselected character"><a href="">.</a></div>
+                <div id="d10" class="unselected space"><span class="iconify" data-icon="cil:space-bar"></span></div>
+                <div id="d11" class="unselected backspace"><span class="iconify" data-icon="fa-solid:backspace"></span></div>
+                <div id="d12" class="unselected enter"><span class="iconify" data-icon="uil:enter"></span></div>
+                <div id="d13" class="unselected up"><i class="fa fa-arrow-up"></i></div>
+            </div>
+
+            <div class="row5" id="r5">
+                <div id="e1" class="unselected down"><i class="fa fa-arrow-down"></i></div>
+                <div id="e2" class="unselected character"><a href="">1</a></div>
+                <div id="e3" class="unselected character"><a href="">2</a></div>
+                <div id="e4" class="unselected character"><a href="">3</a></div>
+                <div id="e5" class="unselected character"><a href="">4</a></div>
+                <div id="e6" class="unselected character"><a href="">5</a></div>
+                <div id="e7" class="unselected character"><a href="">6</a></div>
+                <div id="e8" class="unselected character"><a href="">7</a></div>
+                <div id="e9" class="unselected character"><a href="">.</a></div>
+                <div id="e10" class="unselected space"><span class="iconify" data-icon="cil:space-bar"></span></div>
+                <div id="e11" class="unselected backspace"><span class="iconify" data-icon="fa-solid:backspace"></span></div>
+                <div id="e12" class="unselected enter"><span class="iconify" data-icon="uil:enter"></span></div>
+                <div id="e13" class="unselected up"><i class="fa fa-arrow-up"></i></div>
+            </div>
+
+            <div class="row6" id="r6">
+                <div id="f1" class="unselected down"><i class="fa fa-arrow-down"></i></div>
+                <div id="f2" class="unselected character"><a href="">8</a></div>
+                <div id="f3" class="unselected character"><a href="">9</a></div>
+                <div id="f4" class="unselected character"><a href="">0</a></div>
+                <div id="f5" class="unselected character"><a href="">@</a></div>
+                <div id="f6" class="unselected character"><a href="">?</a></div>
+                <div id="f7" class="unselected character"><a href="">,</a></div>
+                <div id="f8" class="unselected case"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
+                <div id="f9" class="unselected character"><a href="">.</a></div>
+                <div id="f10" class="unselected space"><span class="iconify" data-icon="cil:space-bar"></span></div>
+                <div id="f11" class="unselected backspace"><span class="iconify" data-icon="fa-solid:backspace"></span></div>
+                <div id="f12" class="unselected enter"><span class="iconify" data-icon="uil:enter"></span></div>
+                <div id="f13" class="unselected up"><i class="fa fa-arrow-up"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
